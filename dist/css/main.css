@@ -176,6 +176,7 @@
     font-size: 2rem;
   }
   .card-container {
+    max-width: 1150px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
