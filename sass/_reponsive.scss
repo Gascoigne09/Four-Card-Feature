@@ -73,14 +73,12 @@
         font-size: 2rem;
     }
 
-
     .card-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "card1 card2 card3"
                              "card1 card4 card3"; 
-            
-    
+        max-width: 1150px;
     }
 
     .card {
