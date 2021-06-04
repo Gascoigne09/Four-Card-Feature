@@ -1,0 +1,104 @@
+@import 'config';
+
+// Section intro and titles 
+
+
+
+.section-intro {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    color: $neutral-color__darkBlue;
+
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-weight: map-get($font-weight, thin);
+        font-size: 1.6rem;
+    }
+
+    &__bold {
+        font-size: 1.6rem;
+        font-weight: map-get($font-weight, thick);
+    }
+
+    h4 {
+        font-weight: map-get($font-weight, medium);
+        color: $neutral-color__greyishBlue;
+        max-width: 525.29px;
+        margin: 0 auto;
+    }
+}
+
+.card {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px 0 $neutral-color__greyishBlue;
+    border-radius: 12px;
+    max-width: 350px;
+
+    &-content {
+        width: 85%; 
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 1.5rem;
+            font-weight: map-get($font-weight, medium);
+            margin-bottom: 0.3rem;
+        }
+
+        &__info {
+            font-weight: map-get($font-weight, thin);
+            font-size: 0.9rem;
+            color: $neutral-color__greyishBlue;
+            font-weight: map-get($font-weight, medium);
+        }
+
+        &__image {
+            display: inline-block;
+            margin: 3rem 0 2rem auto;
+        }
+    }
+}
+
+
+
+
+.card-1 {
+    border-top: 5px solid $primary-color__red;
+    margin-top: 4rem;
+}
+
+.card-2 {
+    border-top: 5px solid $primary-color__cyan;
+    margin-top: 2rem;
+}
+
+.card-3 {
+    border-top: 5px solid $primary-color__orange;
+    margin-top: 2rem;
+}
+
+.card-4 {
+    border-top: 5px solid $primary-color__blue;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.attribution {
+    text-align: center;
+    line-height: 1.5;
+    padding: 1rem;
+    
+
+    & a {
+        background-color: transparent;
+        color: $primary-color__orange;
+        text-decoration: none;
+    
+    }
+}
+@import 'reponsive';

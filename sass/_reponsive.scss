@@ -1,0 +1,109 @@
+@include media-lg {
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+        column-gap: 2rem;
+        margin: 4rem auto;
+        width: 80%;
+        
+    }
+
+    .card {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+    }
+
+    .card-1, .card-3 {
+       margin-right: 0;
+       margin-left: auto;
+
+    }
+
+    .card-2, .card-4 {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .card-1 {
+
+        &:hover {
+            box-shadow: 0 5px 15px 0 $primary-color__red;
+            @include transition-ease;
+        }
+    }
+    .card-2 {
+        &:hover {
+            box-shadow: 0 5px 15px 0 $primary-color__cyan;
+            @include transition-ease;
+        }
+
+    }
+    .card-3 {
+
+        &:hover {
+            box-shadow: 0 5px 15px 0 $primary-color__orange;
+            @include transition-ease;
+        }
+
+    }
+    .card-4 {
+        &:hover {
+            box-shadow: 0 5px 15px 0 $primary-color__blue;
+            @include transition-ease;
+        }
+    }
+}
+
+@include media-xl {
+    .section-intro h3 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .section-intro__bold {
+        font-size: 2rem;
+    }
+
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "card1 card2 card3"
+                             "card1 card4 card3"; 
+            
+    
+    }
+
+    .card {
+        margin: 0 auto;
+        align-self: center;
+    }
+
+    .card-1 {
+        grid-area: card1;
+
+       
+    }
+
+    .card-2 {
+        grid-area: card2;
+    }
+
+    .card-3 {
+        grid-area: card3;
+    }
+
+    .card-4 {
+        grid-area: card4;
+    }
+
+}

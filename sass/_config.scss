@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+// Variables
+
+// Colors
+
+$primary-color__red: hsl(0, 78%, 62%);
+$primary-color__cyan: hsl(180, 62%, 55%);
+$primary-color__orange: hsl(34, 97%, 64%);
+$primary-color__blue: hsl(212, 86%, 64%);
+
+$neutral-color__darkBlue: hsl(234, 12%, 34%);
+$neutral-color__greyishBlue:hsl(229, 6%, 66%);
+$neutral-color__lightGrey: hsl(0, 0%, 98%);
+
+// Font weight 
+
+$font-weight: (
+    "thin": 200,
+    "medium": 400,
+    "thick": 600
+);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    background: $neutral-color__lightGrey;
+}
+
+
+// Media Queries
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
